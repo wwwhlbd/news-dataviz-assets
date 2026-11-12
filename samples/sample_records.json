@@ -1,0 +1,85 @@
+[
+  {
+    "id": "sample_20261103_autumn_leaf",
+    "name": "枫叶",
+    "category": "装饰",
+    "description": "枫叶，源自经济日报数据版的裁切示例",
+    "tags": [
+      "枫叶",
+      "秋季",
+      "装饰"
+    ],
+    "relative_path": "samples/autumn_leaf.png",
+    "width": 400,
+    "height": 400,
+    "bytes": 23756,
+    "sha256": "e97f7b5e8e6766026195de908d7e8c1131f36e036d9e493cbb4a9f21eeb9fb73",
+    "source_date": "2026-11-03",
+    "source_url": "http://paper.ce.cn/pc/layout/202611/03/node_09.html",
+    "source_image_sha256": "21424e8f733b383c974ed000f8995bd53f43d0854b918c837ae3354f978f7540",
+    "crop_box": [
+      1510,
+      1080,
+      1660,
+      1230
+    ],
+    "review_status": "试读样本，未通过正式质量审核",
+    "quality_note": "原图白色背景未去除，主体偏小。",
+    "permission_note": "用户表示版面及裁切元素可以公开；具体许可文件未提供"
+  },
+  {
+    "id": "sample_20261103_appliance_group",
+    "name": "家电组合",
+    "category": "插画",
+    "description": "家电组合，源自经济日报数据版的裁切示例",
+    "tags": [
+      "家电",
+      "取暖",
+      "秋季"
+    ],
+    "relative_path": "samples/appliance_group.png",
+    "width": 400,
+    "height": 400,
+    "bytes": 73799,
+    "sha256": "99ba874877fdc00bc26a246dc5cda97d875b159c47966f53dc8bc5d7993e5c9c",
+    "source_date": "2026-11-03",
+    "source_url": "http://paper.ce.cn/pc/layout/202611/03/node_09.html",
+    "source_image_sha256": "21424e8f733b383c974ed000f8995bd53f43d0854b918c837ae3354f978f7540",
+    "crop_box": [
+      1660,
+      230,
+      2085,
+      420
+    ],
+    "review_status": "试读样本，未通过正式质量审核",
+    "quality_note": "原图白色背景未去除；组合内包含多个物体。",
+    "permission_note": "用户表示版面及裁切元素可以公开；具体许可文件未提供"
+  },
+  {
+    "id": "sample_20261103_shopping_cart",
+    "name": "购物车图标",
+    "category": "图标",
+    "description": "购物车图标，源自经济日报数据版的裁切示例",
+    "tags": [
+      "购物车",
+      "消费"
+    ],
+    "relative_path": "samples/shopping_cart.png",
+    "width": 400,
+    "height": 400,
+    "bytes": 4899,
+    "sha256": "38f630b61776b78f185b93090b20aabc032de091264e64d4cd749c7ea0a9d49d",
+    "source_date": "2026-11-03",
+    "source_url": "http://paper.ce.cn/pc/layout/202611/03/node_09.html",
+    "source_image_sha256": "21424e8f733b383c974ed000f8995bd53f43d0854b918c837ae3354f978f7540",
+    "crop_box": [
+      1790,
+      495,
+      1850,
+      555
+    ],
+    "review_status": "试读样本，未通过正式质量审核",
+    "quality_note": "原图白色背景及图表线条仍在，分辨率较低。",
+    "permission_note": "用户表示版面及裁切元素可以公开；具体许可文件未提供"
+  }
+]
