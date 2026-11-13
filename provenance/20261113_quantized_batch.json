@@ -1,0 +1,83 @@
+[
+  {
+    "id": "gen_20260906_soccer",
+    "asset_path": "assets/icons/gen_20260906_soccer.png",
+    "asset_sha256": "4751f0a809d6e822b41e374b10ed6b78031f740bd7fe82a05dc98cc38f9f6830",
+    "generation_tool": "内置 imagegen",
+    "model_version": "未提供",
+    "prompt": "Using the provided newspaper illustration as a visual style reference, redraw exactly one standalone black and white soccer ball. Match the hand-drawn editorial sports illustration appearance, preserve a coherent single complete subject, no other sports objects, no lettering, transparent background.",
+    "generated_at": "精确时间未记录",
+    "original_generated_sha256": "e3b85f33562139625f4b75f6ad5869bed1701af72851cef20bbd17f3660c001e",
+    "reference_scope": "运动用品组合图参考，需进一步定位",
+    "reference_sha256": "8c6f5fa99974c5ca108815f632ece70abebe82d964e53100ad75988f3dc88714",
+    "source_date": "2026-09-06",
+    "source_url": "http://paper.ce.cn/pc/layout/202609/06/node_05.html",
+    "source_page_sha256": "5d5635a26a6e2483dbf624719fcd17906079ec2b2862137458a920395ffb7131",
+    "source_crop_box": null,
+    "normalization": "等比例缩小到400×400透明画布，256色有损量化后转RGBA",
+    "quantization_metrics": {
+      "id": "soccer",
+      "bytes": 163490,
+      "mean_abs_rgb": 1.613,
+      "mean_abs_alpha": 0.339,
+      "alpha_changes_gt_16": 119,
+      "max_alpha_difference": 28
+    },
+    "visual_review": "用户认可生成原图；规范化及有损量化后未获逐张用户复核",
+    "publication_permission": "用户明确表示本批可以上传；未提供书面许可文件"
+  },
+  {
+    "id": "gen_20260906_volleyball",
+    "asset_path": "assets/icons/gen_20260906_volleyball.png",
+    "asset_sha256": "f1e0bc667d681573b9ca7f93caf5e29563800a29c41a560b0c8b8242d55ce2f5",
+    "generation_tool": "内置 imagegen",
+    "model_version": "未提供",
+    "prompt": "Using the provided newspaper illustration as a visual style reference, redraw exactly one standalone blue yellow and white volleyball. Match the hand-drawn editorial sports illustration appearance, preserve a coherent single complete subject, no other sports objects, no lettering, transparent background.",
+    "generated_at": "精确时间未记录",
+    "original_generated_sha256": "fef3a896b47369fb812f23b132255143247a351772482592dc259542f91abbc5",
+    "reference_scope": "运动用品组合图参考，需进一步定位",
+    "reference_sha256": "8c6f5fa99974c5ca108815f632ece70abebe82d964e53100ad75988f3dc88714",
+    "source_date": "2026-09-06",
+    "source_url": "http://paper.ce.cn/pc/layout/202609/06/node_05.html",
+    "source_page_sha256": "5d5635a26a6e2483dbf624719fcd17906079ec2b2862137458a920395ffb7131",
+    "source_crop_box": null,
+    "normalization": "等比例缩小到400×400透明画布，256色有损量化后转RGBA",
+    "quantization_metrics": {
+      "id": "volleyball",
+      "bytes": 179029,
+      "mean_abs_rgb": 2.019,
+      "mean_abs_alpha": 0.288,
+      "alpha_changes_gt_16": 127,
+      "max_alpha_difference": 39
+    },
+    "visual_review": "用户认可生成原图；规范化及有损量化后未获逐张用户复核",
+    "publication_permission": "用户明确表示本批可以上传；未提供书面许可文件"
+  },
+  {
+    "id": "gen_20260906_exercise_ball",
+    "asset_path": "assets/icons/gen_20260906_exercise_ball.png",
+    "asset_sha256": "b788b931027c6b00b2f9e9227300a1089d5e3b2d0d536f3a39df528befeb3d43",
+    "generation_tool": "内置 imagegen",
+    "model_version": "未提供",
+    "prompt": "Using the provided newspaper illustration as a visual style reference, redraw exactly one standalone large turquoise exercise ball. Match the hand-drawn editorial sports illustration appearance, preserve a coherent single complete subject, no other sports objects, no lettering, transparent background.",
+    "generated_at": "精确时间未记录",
+    "original_generated_sha256": "8b3eb1be353f1da7b27e10773a0f72b9969b807d53064fc67587d22543fa6db9",
+    "reference_scope": "运动用品组合图参考，需进一步定位",
+    "reference_sha256": "8c6f5fa99974c5ca108815f632ece70abebe82d964e53100ad75988f3dc88714",
+    "source_date": "2026-09-06",
+    "source_url": "http://paper.ce.cn/pc/layout/202609/06/node_05.html",
+    "source_page_sha256": "5d5635a26a6e2483dbf624719fcd17906079ec2b2862137458a920395ffb7131",
+    "source_crop_box": null,
+    "normalization": "等比例缩小到400×400透明画布，256色有损量化后转RGBA",
+    "quantization_metrics": {
+      "id": "exercise_ball",
+      "bytes": 132601,
+      "mean_abs_rgb": 1.984,
+      "mean_abs_alpha": 0.486,
+      "alpha_changes_gt_16": 88,
+      "max_alpha_difference": 28
+    },
+    "visual_review": "用户认可生成原图；规范化及有损量化后未获逐张用户复核",
+    "publication_permission": "用户明确表示本批可以上传；未提供书面许可文件"
+  }
+]
