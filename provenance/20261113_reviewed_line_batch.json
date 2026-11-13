@@ -1,0 +1,74 @@
+[
+  {
+    "id": "gen_20250612_office_desk_chair",
+    "asset_path": "assets/icons/gen_20250612_office_desk_chair.png",
+    "asset_sha256": "77c820a98af35c496ca702d9008c28442ce94caaa59dcd08e3b7a69119cf7b33",
+    "generation_tool": "内置 imagegen",
+    "model_version": "未提供",
+    "prompt": "Edit the supplied office desk and chair icon: remove all background, pale circles, stray chart fragments, white halos and isolated debris. Preserve the original desk, drawers, chair, layout and blue line-art appearance as faithfully as possible. Transparent background, no text, no extra objects. This is a cleanup experiment, do not redesign.",
+    "generated_at": "精确时间未记录",
+    "original_generated_sha256": "89ea9d9eb42e8d396b481c2b018ad378f65a1e9c8a1a94f65369e7b716059456",
+    "reference_scope": "原版裁切再处理后的局部参考",
+    "reference_sha256": "2aaf24a78ca16bf4beb93ce6a11084f64fad103b739e56998ad145196929e0eb",
+    "source_date": "2025-06-12",
+    "source_url": "http://paper.ce.cn/pc/layout/202506/12/node_09.html",
+    "source_page_sha256": "7e84e363042ebb6dea313644c50f4b7249c0bffafe56fc5bae0308e98604077e",
+    "source_crop_box": [
+      1515,
+      2310,
+      1800,
+      2560
+    ],
+    "normalization": "保持比例缩小到400×400透明画布",
+    "visual_review": "用户认可生成原图；规范化成品未逐张用户复核",
+    "publication_permission": "依据用户对素材共享的指示；未提供书面许可文件"
+  },
+  {
+    "id": "gen_20250612_customer_service",
+    "asset_path": "assets/icons/gen_20250612_customer_service.png",
+    "asset_sha256": "a45a8ac8c320dc4eeac5198b6c26fccde413345c4a4949508eee39694c8081d0",
+    "generation_tool": "内置 imagegen",
+    "model_version": "未提供",
+    "prompt": "Clean the supplied blue line-art customer service person with headset and laptop icon. Remove background circles, page fragments, halos and stray pixels. Preserve the same subject, headset, laptop, pose, composition and blue line-art style; do not add objects or text. Transparent background.",
+    "generated_at": "精确时间未记录",
+    "original_generated_sha256": "d84ea85bd367216fe69f97ba2a1dbc4df7b6ff930eee7e0b33d0c7d25cceef62",
+    "reference_scope": "原版裁切再处理后的局部参考",
+    "reference_sha256": "0dae5a06900d2a8f28eda2e32fcaabd137ba9509cdb76c7a0fc1d4ab36d89479",
+    "source_date": "2025-06-12",
+    "source_url": "http://paper.ce.cn/pc/layout/202506/12/node_09.html",
+    "source_page_sha256": "7e84e363042ebb6dea313644c50f4b7249c0bffafe56fc5bae0308e98604077e",
+    "source_crop_box": [
+      1490,
+      478,
+      1680,
+      715
+    ],
+    "normalization": "保持比例缩小到400×400透明画布",
+    "visual_review": "用户认可生成原图；规范化成品未逐张用户复核",
+    "publication_permission": "依据用户对素材共享的指示；未提供书面许可文件"
+  },
+  {
+    "id": "gen_20250612_grocery_bread",
+    "asset_path": "assets/icons/gen_20250612_grocery_bread.png",
+    "asset_sha256": "871de7169a4cd5990b2cdf926750bf20f4150b59856cfe22e9749625c2c9cc3e",
+    "generation_tool": "内置 imagegen",
+    "model_version": "未提供",
+    "prompt": "Clean the supplied blue line-art groceries icon with baguettes, croissant and jar. Remove background circles, page fragments, halos and stray pixels. Preserve all objects, shapes, placement and blue line-art style; do not add objects or text. Transparent background.",
+    "generated_at": "精确时间未记录",
+    "original_generated_sha256": "39fc0f2378d09980d5d44c461339abc3d64b18c9d27345928388a6ea65a28d24",
+    "reference_scope": "原版裁切再处理后的局部参考",
+    "reference_sha256": "41222dc730c204a03922268a5fc65c93a3a590fe0d992e6a1c9c932d37518356",
+    "source_date": "2025-06-12",
+    "source_url": "http://paper.ce.cn/pc/layout/202506/12/node_09.html",
+    "source_page_sha256": "7e84e363042ebb6dea313644c50f4b7249c0bffafe56fc5bae0308e98604077e",
+    "source_crop_box": [
+      700,
+      1940,
+      955,
+      2185
+    ],
+    "normalization": "保持比例缩小到400×400透明画布",
+    "visual_review": "用户认可生成原图；规范化成品未逐张用户复核",
+    "publication_permission": "依据用户对素材共享的指示；未提供书面许可文件"
+  }
+]
