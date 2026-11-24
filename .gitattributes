@@ -1,0 +1,5 @@
+# Keep verified asset and source hashes stable across checkouts.
+/assets.sqlite3 -text
+/assets/external/**/*.png -text
+/provenance/tabler-icons/**/*.svg -text
+/provenance/tabler-icons/LICENSE.txt -text

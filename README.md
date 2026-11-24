@@ -1,8 +1,31 @@
 # 新闻图表设计素材库
 
-本仓库保存素材、数据库和说明。素材处理和检索程序保存在仓库外的本地工具目录。正式数据库现有 200 个图标：原有 100 项及 2026-11-17 新增的 100 项；`samples/` 另有三张报纸裁切图和示例记录，供对接试读，不计入正式合格素材。
+本仓库保存素材、数据库和说明。素材处理和检索程序保存在仓库外的本地工具目录。正式数据库共收录 6384 项。包括 200 项经济日报来源素材，以及 Tabler Icons v3.46.0 的 5130 个线框版和 1054 个实心版。`samples/` 另有三张报纸裁切图和示例记录，供对接试读，不计入正式合格素材。
 
-`assets.sqlite3` 是独立 SQLite 数据库，表 `metadata` 的 `schema_version` 为 2；表 `assets` 保留示例库所有字段并有额外的用途和审核字段。`relative_path` 相对于本仓库根目录，`tags_json` 是 JSON 标签数组，`crop_box_json` 是原图像素裁切框 JSON 数组。前端应以 SQLite 只读方式打开，不得修改或合并本库。数据库由素材维护者单独更新；同学已确认示例可读取，正式库接入尚待验证。
+`assets.sqlite3` 是独立 SQLite 数据库，表 `metadata` 的 `schema_version` 为 3。表 `assets` 保留原有字段。`relative_path` 是相对于本仓库根目录的 PNG 路径，`tags_json` 是 JSON 标签数组，`crop_box_json` 是原图像素裁切框 JSON 数组。前端应以 SQLite 只读方式打开，不得修改或合并本库。数据库由素材维护者单独更新；同学已确认示例可读取，正式库接入尚待验证。
+
+### 来源和筛选字段
+
+| 字段 | 用途 |
+| --- | --- |
+| `source_collection` | 来源库。当前值为 `economic-daily` 和 `tabler-icons`。 |
+| `source_asset_key` | 上游条目标识。Tabler 采用官方图标名称，例如 `chart-radar`。 |
+| `source_version` | 上游版本。Tabler 当前为 `3.46.0`。 |
+| `icon_style` | 图标样式。Tabler 采用 `outline`（线框）和 `filled`（实心）。 |
+| `topic` | 用于筛选的中文主题。同一个 Tabler 图标的两种样式使用同一主题。 |
+| `license_spdx` | 已核验的标准许可标识。Tabler 为 `MIT`。详细依据见 `license_evidence`。 |
+| `svg_relative_path`、`svg_sha256` | 原始 SVG 的仓库相对路径及文件 SHA-256。 |
+
+这组字段按已核实的信息回填。经济日报条目填入来源库，其他新增字段为 `NULL`，授权依据见原许可记录。既有 `category` 继续表示图标、插画等素材类型，`source_type` 继续记录制作方式。
+
+```sql
+SELECT id, name, relative_path, svg_relative_path
+FROM assets
+WHERE source_collection = 'tabler-icons'
+  AND icon_style = 'outline'
+  AND topic = '图表与统计'
+  AND license_spdx = 'MIT';
+```
 
 正式素材需透明背景：图标采用 400×400 画布，插画实际内容包围范围短边至少 800 像素；画布尺寸不代表内容尺寸。透明边缘、主体质量与内容完整性仍须人工审核。前期每张 ≤200KB 的体积要求暂时保留，如遇高分辨率素材无法同时满足，应记录并另行协调，不通过降低清晰度凑数。
 
@@ -20,3 +43,7 @@
 
 
 2026-11-17 本地新增100项：用户同意整批入库，少量项目按反馈重绘；未将整批入库等同于逐项独立验收。来源、裁切、提示词、哈希、图表用途及已知差异见 [本批来源记录](provenance/20261117_local_batch.json)。用户已要求将本批推送远程；尚未提供书面许可或下游再许可条款；含数据编码的固定图形不可直接表达其他数值。
+
+2026-11-24 外部图标批次收录 800 项 Tabler Icons v3.46.0 线框图标。使用相同的素材读取接口，外部图标 ID 以 `ext-tabler-outline-` 开头，PNG 位于 `assets/external/tabler-outline/`。原 SVG、逐项来源及哈希见 [入库来源记录](provenance/tabler-icons/20261124_import.json)。分发这些图标时附上 [MIT 版权声明和许可原文](provenance/tabler-icons/LICENSE.txt)。本次按用户指示导入，画面对照及技术检查由助手执行。
+
+2026-11-24 Tabler Icons 全量补录 4330 个线框版和 1054 个实心版。外部素材按官方发布包中的 SVG 和样式计数，实心版用 `prototype_id` 关联同名线框版。新增条目沿用上游图标名称和标签，并附中文类别。少量像素完全相同的文件保留各自的上游来源，归并关系见 [全量补录来源记录](provenance/tabler-icons/20261124_full_import.json)。出库时随图标附上 [MIT 版权声明与许可原文](provenance/tabler-icons/LICENSE.txt)。本次检查了全部源文件及入库 PNG，并按类别抽查浅底和深底效果。
